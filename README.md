@@ -79,15 +79,15 @@ https://download.openmmlab.com/mmdetection/v2.0/detectors/detectors_cascade_rcnn
 https://download.openmmlab.com/mmclassification/v0/efficientnet/efficientnet-b0_3rdparty_8xb32-aa-advprop_in1k_20220119-26434485.pth
 
 Then we can do the prediction with our models. Please use the following command line
-# 1. Use the FFmpeg library to extract/count frames.
+### 3. Use the FFmpeg library to extract/count frames.
 python tools/extract_frames.py --out_folder ./frames
 
-# 2. Scan all video images to determine the type of product and when it appears on the white tray (in frame level)
+### 4. Scan all video images to determine the type of product and when it appears on the white tray (in frame level)
 CUDA_VISIBLE_DEVICES=0 python tools/test_net_23_inframe.py --input_folder ./frames --out_file ./results.txt --detector ./checkpoints/detectors_cascade_rcnn_r50_1x_coco/epoch_5.pth --feature ./checkpoints/b0/epoch_20.pth --b2 ./checkpoints/b2/epoch_20.pth --resnest50 ./checkpoints/resnest50/epoch_20.pth --resnest101 ./checkpoints/resnest101/epoch_20.pth
 
 The output result is in results.txt, you can submit it to the official evaluation system to obtain the F1-score.
 
-### 3. Training
+## Training of models
 
 Download images and annotations for training detector and classifiers from 
 (https://drive.google.com/file/d/1zhIEYGuDviOr4N5ZV8nNbWcIDSB2a2oY/view?usp=sharing).
@@ -112,18 +112,18 @@ data
 
 Then we can start to train the classifiers and detector.
 
-# 1. Train Detector with Multi GPUs(e.g. 4 GPUs)
+### 1. Train Detector with Multi GPUs(e.g. 4 GPUs)
 bash ./mmdetection/tools/dist_train.sh ./mmdetection/configs/detectors/detectors_cascade_rcnn_r50_1x_coco.py 4
 
 The trained detectors will be saved to ./mmdetection/work_dirs/detectors_cascade_rcnn
 
-# 2. Train Classifier with Multi GPUs(e.g. 4 GPUs)
+### 2. Train Classifier with Multi GPUs(e.g. 4 GPUs)
 bash ./mmclassification/tools/train_multi.sh 4
 
 The trained classifiers will be saved to ./mmclassification/work_dirs/
 
 
-### 4. Data preparation
+## Data preparation
 
 The training data for classifers and detectors are obtained through another repo from us. Pleae refer to https://github.com/ShiZiqiang/checkout-data-generation/.
 
