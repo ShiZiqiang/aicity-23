@@ -19,21 +19,6 @@ In this paper, we propose a method called CheckSORT for automatic retail checkou
 
 ### 1. Environments settings
 
-* python 3.7.12
-* pytorch 1.10.0
-* torchvision 0.11.1
-* cuda 11.3
-* mmcv-full 1.4.3
-* tensorflow-gpu 1.15.0
-
-```shell
-1. conda create -n submit python=3.7
-2. conda activate submit
-3. conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
-4. pip install -r requirements.txt
-5. pip uninstall setuptools
-6. conda install setuptools==58.0.4 
-```
 
 Please download the mmdetection and classification related packages from
 (https://drive.google.com/file/d/1uV_wzjVYZQoPf2rSmhg1PIq9fQUk0ccu/view?usp=sharing), and place them in the root dir of this repo. The structure is like 
@@ -52,6 +37,26 @@ repo/
 ├── README.md
 ├── requirements.txt
 ```
+
+* python 3.7.12
+* pytorch 1.10.0
+* torchvision 0.11.1
+* cuda 11.3
+* mmcv-full 1.4.3
+* tensorflow-gpu 1.15.0
+
+
+
+
+```shell
+1. conda create -n submit python=3.7
+2. conda activate submit
+3. conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
+4. pip install -r requirements.txt
+5. pip uninstall setuptools
+6. conda install setuptools==58.0.4 
+```
+
 
 
 ### 2. Testing
