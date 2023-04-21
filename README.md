@@ -38,6 +38,8 @@ repo/
 ├── requirements.txt
 ```
 
+Our repo has been tested with following configuration.
+
 * python 3.7.12
 * pytorch 1.10.0
 * torchvision 0.11.1
@@ -45,9 +47,7 @@ repo/
 * mmcv-full 1.4.3
 * tensorflow-gpu 1.15.0
 
-
-
-
+You can install the environment with following commands
 ```shell
 1. conda create -n submit python=3.7
 2. conda activate submit
@@ -114,8 +114,7 @@ The output result is in results.txt, you can submit it to the official evaluatio
 
 ## Training of models
 
-Download images and annotations for training detector and classifiers from 
-(https://drive.google.com/file/d/1zhIEYGuDviOr4N5ZV8nNbWcIDSB2a2oY/view?usp=sharing).
+
 
 Download images and annotations for training detector from 
 https://drive.google.com/file/d/1JiDWpVj3PJG-Kv1YyAy8F_gSifviamKu/view?usp=sharing
