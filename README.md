@@ -128,7 +128,11 @@ The trained classifiers will be saved to ./mmclassification/work_dirs/
 The training data for classifers and detectors are obtained through another repo from us. Pleae refer to https://github.com/ShiZiqiang/checkout-data-generation/.
 
 
-```
-# Contact
+## Contact
 
 If you have any questions, feel free to contact Ziqiang Shi (shiziqiang@fujitsu.com).
+
+## Reference
+```
+
+```
