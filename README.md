@@ -35,8 +35,28 @@ In this paper, we propose a method called CheckSORT for automatic retail checkou
 6. conda install setuptools==58.0.4 
 ```
 
+Please download the mmdetection and classification related packages from
+(https://drive.google.com/file/d/1uV_wzjVYZQoPf2rSmhg1PIq9fQUk0ccu/view?usp=sharing), and place them in the root dir of this repo. The structure is like 
+```
+repo/
+├── mm_install_package
+├── mmclassification
+├── mmdetection
+├── configs
+├── deep_sort
+├── src
+├── strong_sort
+├── tools
+├── win_sort
+├── work_dirs
+├── README.md
+├── requirements.txt
+```
+
+
 ### 2. Testing
 Please place the videos you want to test in the [test_videos](./test_videos) folder.
+
 ```
 test_videos/
 ├── testA_1.mp4
@@ -133,6 +153,7 @@ The training data for classifers and detectors are obtained through another repo
 If you have any questions, feel free to contact Ziqiang Shi (shiziqiang@fujitsu.com).
 
 ## Reference
+
 ```
 @InProceedings{shi23AIC23,
 	author = {Ziqiang Shi and Zhongling Liu and Liu Liu and Rujie Liu and Takuma Yamamoto and Xiaoyu Mi and Daisuke Uchida},
