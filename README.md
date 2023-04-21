@@ -134,5 +134,11 @@ If you have any questions, feel free to contact Ziqiang Shi (shiziqiang@fujitsu.
 
 ## Reference
 ```
-
+@InProceedings{shi23AIC23,
+	author = {Ziqiang Shi and Zhongling Liu and Liu Liu and Rujie Liu and Takuma Yamamoto and Xiaoyu Mi and Daisuke Uchida},
+	title = {CheckSORT: Refined Synthetic Data Combination and Optimized SORT for Automatic Retail Checkout},
+	booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+	month = {June},
+	year = {2023},
+}
 ```
